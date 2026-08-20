@@ -20,13 +20,18 @@ Any changes made to the architecture of this project is documented in the ADRs i
 ## Prototypes
 Each prototype is built with what parts I am able to use at the time of making them. Stored in prototypes/
 
-### pin-entry-v1
+### [v1-pin-entry](./prototypes/v1-pin-entry/)
 - Built with a 3x4 keypad, LCD1602 (Did not have the TFT display at the time), servo, and buzzer. 
 - PIN auto submits on the 4th digit. 
 - No MFA with RFID, purely just PIN entry and validation.
 - '#' isn't used here and '*' is used to erase the last entered digit.
 
-### pin-entry-v2
+### [v2-pin-entry](./prototypes/v2-pin-entry/)
 - The TFT display now replaces the LCD1602. 
 - Still no MFA with RFID implemented.
 - Instead of auto submitting on digit 4, it now requires you to manually submit with '#' on the keypad. 
+
+### [v3-mfa](./prototypes/v3-mfa/)
+- MFA is now implemented with MFRC522.
+- Prompts you to scan your card before being able to access the pin screen.
+- All allowed UIDs share a global pin which is an issue to be fixed in the next prototype.
