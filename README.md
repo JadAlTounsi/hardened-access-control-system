@@ -35,3 +35,9 @@ Each prototype is built with what parts I am able to use at the time of making t
 - MFA is now implemented with MFRC522.
 - Prompts you to scan your card before being able to access the pin screen.
 - All allowed UIDs share a global pin which is an issue to be fixed in the next prototype.
+
+### [v4-mfa](./prototypes/v4-mfa/)
+- Fixes v3 global pin issue. Each approved user has their own pin they enter.
+- Inactivity for 15 seconds on the pin screen sends you back to the scan screen prompting to scan your ID again.
+- Lockout for 24 hours after 3 failed pin attempts.
+- No way to manually reactivate a user as of this version.
