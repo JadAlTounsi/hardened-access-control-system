@@ -3,7 +3,7 @@
 **Status:** In Progress
 
 ## Overview
-A hardware access control system using PIN and RFID/NFC as a linked two factor authentication (card scan unlocks a card specific PIN prompt). Built as a security assessment exercise rather than a standard access control build. The system will be intentionally built with no security hardening first, then attacked to identify real vulnerabilities, with each finding documented and fixed individually. All events will be logged and able to be viewed on a dashboard.
+A hardware access control system using PIN and RFID as a linked two factor authentication (card scan unlocks a card specific PIN prompt). Built as a security assessment exercise rather than a standard access control build. The system will be intentionally built with no security hardening first, then attacked to identify real vulnerabilities, with each finding documented and fixed individually. All events will be logged and able to be viewed on a dashboard.
 
 ## Current State
 - Working: PIN entry through keypad, LCD feedback, servo lock, buzzer feedback, RFID, user-specific pins, lockout feature
