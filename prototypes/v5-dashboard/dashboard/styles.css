@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", -apple-system, "Segoe UI", sans-serif;
+
+  --color-bg: #0f1729;
+  --color-surface: #1a2942;
+  --color-surface2: #202f4a;
+  --color-border: #30465e;
+  --color-text: #f8f9fa;
+  --color-muted: #adadaf;
+  --color-dim: #5b7490;
+  --color-granted: #22c55e;
+  --color-warning: #f59e0b;
+  --color-critical: #ef4444;
+  --color-accent: #4f8ff7;
+
+}
+
+@layer components {
+  .sidebar-item {
+    @apply flex items-center h-10 rounded-lg cursor-pointer transition-all duration-200 group-hover:w-full group-hover:px-3;
+  }
+
+  .sidebar-item-active {
+    @apply bg-[rgba(79,143,247,0.14)] text-accent;
+  }
+
+  .sidebar-item-inactive {
+    @apply text-dim hover:bg-white/[0.04] hover:text-muted;
+  }
+
+  .sidebar-icon {
+    @apply w-10 h-10 flex items-center justify-center flex-shrink-0;
+  }
+
+  .sidebar-label {
+    @apply ml-0 group-hover:ml-2 text-sm font-medium whitespace-nowrap opacity-0 max-w-0 overflow-hidden group-hover:opacity-100 group-hover:max-w-[160px] transition-all duration-200;
+  }
+
+  .filter-pill {
+    @apply flex items-center gap-2 bg-surface border border-border text-text font-sans text-[13px] px-3 py-2 rounded-[7px] cursor-pointer select-none hover:border-dim;
+  }
+  
+  .stat-card {
+    @apply bg-surface border border-border rounded-[10px] px-5 py-[18px];
+  }
+
+  .stat-card-col {
+    @apply flex flex-col;
+  }
+
+  .table-header-cell {
+    @apply text-left text-[11px] font-semibold text-dim px-[18px] py-3 border-b border-border bg-surface2 whitespace-nowrap;
+  }
+
+  .event-row {
+    @apply border-b border-b-[rgba(48,70,94,0.5)] last:border-b-0 transition-colors duration-100 motion-reduce:transition-none;
+  }
+
+  .event-cell {
+    @apply px-[18px] py-2.5 text-[14px] align-middle;
+  }
+
+  .divider-row {
+    @apply flex items-center justify-between gap-3.5 py-3 border-b border-b-[rgba(48,70,94,0.5)] last:border-b-0;
+  }
+}
