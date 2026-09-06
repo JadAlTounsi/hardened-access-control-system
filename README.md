@@ -7,7 +7,7 @@ A hardware access control system using PIN and RFID as a linked two factor authe
 
 ## Current State
 - Working: PIN entry through keypad, LCD feedback, servo lock, buzzer feedback, RFID, user-specific pins, lockout feature
-- To be implemented: Camera module, rate limiting, network layer, flash encryption
+- To be implemented: Camera module, rate limiting, network layer, flash encryption, dashboard implementation that connects the ESP32 events to the dashboard
 - Known insecure by design: Plaintext PIN comparison, no rate limitng, no encryption
 
 ## System Architecture
