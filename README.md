@@ -14,6 +14,10 @@ A hardware access control system using PIN and RFID as a linked two factor authe
 
 ![System Architecture Diagram](docs/images/system-architecture.png)
 
+## Database Design
+
+![Database Design](docs/images/db-sketch.png)
+
 ## Design Decisions
 Any changes made to the architecture of this project is documented in the ADRs in docs/adr
 
@@ -41,3 +45,6 @@ Each prototype is built with what parts I am able to use at the time of making t
 - Inactivity for 15 seconds on the pin screen sends you back to the scan screen prompting to scan your ID again.
 - Lockout for 24 hours after 3 failed pin attempts.
 - No way to manually reactivate a user as of this version.
+
+### [v5-dashboard](./prototypes/v5-dashboard/)
+In Progress
