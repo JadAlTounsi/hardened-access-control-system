@@ -6,9 +6,9 @@
 A hardware access control system using PIN and RFID as a linked two factor authentication (card scan unlocks a card specific PIN prompt). Built as a security assessment exercise rather than a standard access control build. The system will be intentionally built with no security hardening first, then attacked to identify real vulnerabilities, with each finding documented and fixed individually. All events will be logged and able to be viewed on a dashboard.
 
 ## Current State
-- Working: PIN entry through keypad, LCD feedback, servo lock, buzzer feedback, RFID, user-specific pins, lockout feature
-- To be implemented: Camera module, rate limiting, network layer, flash encryption, dashboard implementation that connects the ESP32 events to the dashboard
-- Known insecure by design: Plaintext PIN comparison, no rate limitng, no encryption
+- Working: PIN entry through keypad, TFT feedback, servo lock, buzzer feedback, RFID, user-specific pins, lockout feature
+- To be implemented: Camera module, network layer, request level rate limiting, network layer, flash encryption, dashboard for ESP32 events
+- Known insecure by design: Plaintext PIN comparison, no request-level rate limiting on the network layer, no encryption, lockout counter held in RAM only and resets on power cycle
 
 ## System Architecture
 
